@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="buttonclick()">Click To Show Planets</button>
+    <br>
+    <div>
+        <div id="mercury">Empty</div>
+        <div id="jupiter">Empty</div>
+        <div id="earth">Empty</div>
+    </div>
+
+
+    <script>
+        class planets {
+            constructor(planet, fact) {
+                this.planet = planet;
+                this.fact = fact;
+            }
+
+            display(){
+               document.write(this.planet)
+                 document.write(this.fact)
+            }
+        }
+
+        function buttonclick(){
+            let s1 = new planets("Mercury","Fun Fact : Mercury's solar day (from sunrise to sunrise) is twice as long as its entire year!");
+        s1.display();
+
+         let s2 = new planets("Jupiter","Fun Fact : Jupiter is the largest planet in our solar system, and it is so massive that more than 1,000 Earths could fit inside it!");
+        s2.display();
+
+        let s3 = new planets("Earth","Fun Fact : Earth is not a perfect sphere, but an oblate spheroid that bulges slightly at the equator due to its rotation!");
+        s3.display();
+        }
+
+         
+
+    </script>
+</body>
+</html>
